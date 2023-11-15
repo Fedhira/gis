@@ -42,7 +42,7 @@
                                     @csrf
                                     @method('DELETE')
                                     <!-- {{-- <button type="submit" class="btn btn-danger">Hapus</button> --}} -->
-                                    <button type="button" class="btn btn-danger" onclick="{{ confirmDelete ('$sekolah->id') }}">Hapus</button>
+                                    <button type="button" class="btn btn-danger" onclick="confirmDelete({{ '$sekolah->id' }})">Hapus</button>
                                 </form>
                             </td>
                         </tr>
